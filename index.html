@@ -5,30 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="2080 Fabrications Co. provides custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services." />
   <title>2080 Fabrications Co. | Designed. Built. Delivered.</title>
+  <link rel="canonical" href="https://2080fabco.com/" />
+  <meta name="theme-color" content="#0a0d11" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="2080 Fabrications Co." />
+  <meta property="og:title" content="2080 Fabrications Co. | Designed. Built. Delivered." />
+  <meta property="og:description" content="Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services in Delaware County, Pennsylvania." />
+  <meta property="og:url" content="https://2080fabco.com/" />
+  <meta property="og:image" content="https://2080fabco.com/assets/shop.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="2080 Fab Co. electronics and fabrication workspace" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="2080 Fabrications Co. | Designed. Built. Delivered." />
+  <meta name="twitter:description" content="Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services in Delaware County, Pennsylvania." />
+  <meta name="twitter:image" content="https://2080fabco.com/assets/shop.jpg" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://2080fabco.com/#business",
+    "name": "2080 Fabrications Co.",
+    "alternateName": "2080 Fab Co.",
+    "url": "https://2080fabco.com/",
+    "logo": "https://2080fabco.com/icons/icon-512.png",
+    "image": "https://2080fabco.com/assets/shop.jpg",
+    "description": "Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services in Delaware County, Pennsylvania.",
+    "email": "2080fabco@gmail.com",
+    "foundingDate": "2025",
+    "address": { "@type": "PostalAddress", "addressRegion": "PA", "addressCountry": "US" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Delaware County, Pennsylvania" },
+    "knowsAbout": ["3D printing", "CAD design", "Woodworking", "Electronics", "Laser engraving", "Prototyping"],
+    "sameAs": [
+      "https://shop.2080fabco.com",
+      "https://www.facebook.com/2080FabCo/",
+      "https://www.instagram.com/2080fabrications/",
+      "https://www.tiktok.com/@2080fabco",
+      "https://www.youtube.com/@2080Fabco"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="2080 Fabrications Co. home">
-      <img class="brand-logo" src="assets/2080-logo.png" alt="2080 Fab Co. logo">
+      <img class="brand-logo" src="assets/optimized/2080-logo-96.png" width="96" height="98" alt="2080 Fab Co. logo">
       <span class="brand-name">2080 FABRICATIONS CO.</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
 
-    <nav class="nav-links" aria-label="Main navigation">
+    <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#work">Our Work</a>
       <a href="#about">About</a>
-      <a href="#shop">Shop</a>
+      <a href="https://shop.2080fabco.com">Shop</a>
       <a class="nav-cta" href="#contact">Start a Project</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1">
     <section class="hero">
       <div class="hero-grid-overlay"></div>
 
@@ -44,8 +90,11 @@
         </div>
       </div>
 
-      <div class="hero-visual photo-hero" aria-label="Bambu Lab 3D printer in the 2080 Fab Co. shop">
-        <img src="assets/printer.jpg" alt="Bambu Lab 3D printer producing a custom part">
+      <div class="hero-visual photo-hero">
+        <picture>
+          <source type="image/webp" srcset="assets/optimized/printer-480.webp">
+          <img src="assets/printer.jpg" width="480" height="640" alt="Bambu Lab 3D printer producing a custom part" fetchpriority="high" decoding="async">
+        </picture>
         <div class="photo-badge">IN-HOUSE 3D PRINTING</div>
       </div>
 
@@ -109,7 +158,10 @@
 
       <div class="project-grid">
         <article class="project-card">
-          <img class="project-photo" src="assets/pergola.jpg" alt="Finished custom pergola build">
+          <picture>
+            <source type="image/webp" srcset="assets/optimized/pergola-800.webp 800w, assets/optimized/pergola-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 400px">
+            <img class="project-photo" src="assets/optimized/pergola-800.jpg" width="800" height="600" alt="Finished custom pergola build" loading="lazy" decoding="async">
+          </picture>
           <div class="project-info">
             <h3>Custom Pergola Build</h3>
             <p>A complete outdoor woodworking project designed and built for the space.</p>
@@ -117,7 +169,10 @@
         </article>
 
         <article class="project-card">
-          <img class="project-photo" src="assets/wled-board.jpg" alt="Custom WLED electronics control board">
+          <picture>
+            <source type="image/webp" srcset="assets/optimized/wled-board-800.webp">
+            <img class="project-photo" src="assets/optimized/wled-board-800.jpg" width="800" height="1067" alt="Custom WLED electronics control board" loading="lazy" decoding="async">
+          </picture>
           <div class="project-info">
             <h3>WLED Control System</h3>
             <p>A custom-built electronics and lighting control setup with clean component mounting.</p>
@@ -125,7 +180,10 @@
         </article>
 
         <article class="project-card">
-          <img class="project-photo" src="assets/cyberbrick.jpg" alt="Custom Cyberbrick bumper car controllers">
+          <picture>
+            <source type="image/webp" srcset="assets/optimized/cyberbrick-800.webp 800w, assets/optimized/cyberbrick-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 400px">
+            <img class="project-photo" src="assets/optimized/cyberbrick-800.jpg" width="800" height="600" alt="Custom Cyberbrick bumper car controllers" loading="lazy" decoding="async">
+          </picture>
           <div class="project-info">
             <h3>Custom Electronics Build</h3>
             <p>Functional controllers combining printed parts, electronics, assembly, and finishing.</p>
@@ -138,7 +196,10 @@
       <div>
         <p class="eyebrow">ABOUT 2080 FAB CO.</p>
         <h2>A builder’s approach to modern fabrication.</h2>
-        <img class="about-photo" src="assets/shop.jpg" alt="2080 Fab Co. electronics and fabrication workspace">
+        <picture>
+          <source type="image/webp" srcset="assets/optimized/shop-800.webp 800w, assets/optimized/shop-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 520px">
+          <img class="about-photo" src="assets/optimized/shop-800.jpg" width="800" height="600" alt="2080 Fab Co. electronics and fabrication workspace" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="about-copy">
         <p>
@@ -158,8 +219,9 @@
         <p class="eyebrow">2080 FAB CO. SHOP</p>
         <h2>Original products are on the way.</h2>
         <p>Shop accessories, printed solutions, patriotic designs, workshop gear, and limited-run builds.</p>
+        <p class="shop-note">The online shop is being prepared and is currently password-protected while the catalog is completed.</p>
       </div>
-      <a class="button secondary" href="https://www.etsy.com/shop/2080FabCo" target="_blank" rel="noopener">Visit Our Etsy Shop</a>
+      <a class="button secondary" href="https://shop.2080fabco.com">Visit the 2080 Shop</a>
     </section>
 
     <section id="contact" class="section contact-section">
@@ -174,9 +236,9 @@
           <span>Email</span>
           <strong>2080fabco@gmail.com</strong>
         </a>
-        <a class="contact-card" href="https://www.etsy.com/shop/2080FabCo" target="_blank" rel="noopener">
+        <a class="contact-card" href="https://shop.2080fabco.com">
           <span>Shop</span>
-          <strong>Etsy / 2080FabCo</strong>
+          <strong>Online Shop</strong>
         </a>
         <div class="contact-card">
           <span>Service Area</span>
@@ -190,13 +252,14 @@
 
   <footer>
     <div class="brand footer-brand">
-      <img class="footer-logo" src="assets/2080-logo.png" alt="2080 Fab Co. logo">
+      <img class="footer-logo" src="assets/optimized/2080-logo-184.png" width="184" height="189" alt="2080 Fab Co. logo" loading="lazy" decoding="async">
     </div>
     <p>Designed. Built. Delivered.</p>
     <div class="social-links">
+      <a href="https://shop.2080fabco.com">Online Shop</a>
       <a href="https://www.facebook.com/2080FabCo/" target="_blank" rel="noopener">Facebook</a>
       <a href="https://www.instagram.com/2080fabrications/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.youtube.com/@2080FabricationCo" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener">YouTube</a>
       <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener">TikTok</a>
     </div>
     <small>© <span id="year"></span> 2080 Fabrications Co. All rights reserved.</small>

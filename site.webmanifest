@@ -1,0 +1,13 @@
+{
+  "name": "2080 Fabrications Co.",
+  "short_name": "2080 Fab Co.",
+  "description": "Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication in Delaware County, Pennsylvania.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0d11",
+  "theme_color": "#0a0d11",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

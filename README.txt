@@ -8,7 +8,7 @@ Included:
 - Real 2080 Fab Co. logo
 - Real printer and shop photos
 - Pergola, WLED, and Cyberbrick featured projects
-- Etsy and social links
+- Online shop (shop.2080fabco.com) and social links
 - Desktop and mobile layout
 
 This is intentionally the simple launch version. Additional project pages
