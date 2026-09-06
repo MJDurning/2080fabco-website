@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="2080 Fabrications Co. provides custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services." />
-  <title>2080 Fabrications Co. | Designed. Built. Delivered.</title>
+  <meta name="description" content="2080 Fabrications Co. is a Delaware County, PA maker shop: custom 3D printing, CAD design, woodworking, electronics, laser work and prototyping, plus an online shop of in-house products." />
+  <title>2080 Fabrications Co. | Custom fabrication in Delco, PA</title>
   <link rel="canonical" href="https://2080fabco.com/" />
   <meta name="theme-color" content="#0a0d11" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="2080 Fabrications Co." />
-  <meta property="og:title" content="2080 Fabrications Co. | Designed. Built. Delivered." />
-  <meta property="og:description" content="Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services in Delaware County, Pennsylvania." />
+  <meta property="og:title" content="2080 Fabrications Co. | Custom fabrication in Delco, PA" />
+  <meta property="og:description" content="Custom 3D printing, CAD design, woodworking, electronics, laser work and prototyping from one Delaware County workshop." />
   <meta property="og:url" content="https://2080fabco.com/" />
   <meta property="og:image" content="https://2080fabco.com/assets/shop.jpg" />
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="1200" />
   <meta property="og:image:alt" content="2080 Fab Co. electronics and fabrication workspace" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="2080 Fabrications Co. | Designed. Built. Delivered." />
-  <meta name="twitter:description" content="Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services in Delaware County, Pennsylvania." />
+  <meta name="twitter:title" content="2080 Fabrications Co. | Custom fabrication in Delco, PA" />
+  <meta name="twitter:description" content="Custom 3D printing, CAD design, woodworking, electronics, laser work and prototyping from one Delaware County workshop." />
   <meta name="twitter:image" content="https://2080fabco.com/assets/shop.jpg" />
   <link rel="icon" href="/favicon.ico" sizes="32x32" />
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png" />
   <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,7 +39,7 @@
     "url": "https://2080fabco.com/",
     "logo": "https://2080fabco.com/icons/icon-512.png",
     "image": "https://2080fabco.com/assets/shop.jpg",
-    "description": "Custom 3D printing, CAD design, woodworking, electronics, prototyping, and fabrication services in Delaware County, Pennsylvania.",
+    "description": "Custom 3D printing, CAD design, woodworking, electronics, laser work and prototyping in Delaware County, Pennsylvania.",
     "email": "2080fabco@gmail.com",
     "foundingDate": "2025",
     "address": { "@type": "PostalAddress", "addressRegion": "PA", "addressCountry": "US" },
@@ -50,219 +54,268 @@
     ]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#top">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="2080 Fabrications Co. home">
-      <img class="brand-logo" src="assets/optimized/2080-logo-96.png" width="96" height="98" alt="2080 Fab Co. logo">
-      <span class="brand-name">2080 FABRICATIONS CO.</span>
-    </a>
 
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="2080 Fabrications Co. home">
+        <img class="brand-logo" src="assets/optimized/2080-logo-96.png" width="96" height="98" alt="2080 Fab Co. badge logo">
+        <span class="brand-text"><span class="brand-name">2080 Fabrications Co.</span><span class="brand-sub">Delco, Pennsylvania</span></span>
+      </a>
 
-    <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#work">Our Work</a>
-      <a href="#about">About</a>
-      <a href="https://shop.2080fabco.com">Shop</a>
-      <a class="nav-cta" href="#contact">Start a Project</a>
-    </nav>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-toggle__text">Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Main navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="https://shop.2080fabco.com" class="nav-shop">Shop <span class="ext" aria-hidden="true">&#8599;</span></a>
+        <a class="button primary nav-cta" href="#contact">Start a project</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top" tabindex="-1">
-    <section class="hero">
-      <div class="hero-grid-overlay"></div>
 
-      <div class="hero-content">
-        <p class="eyebrow">CUSTOM FABRICATION • DELCO, PA</p>
-        <h1>Designed.<br>Built.<br><span>Delivered.</span></h1>
-        <p class="hero-copy">
-          Custom 3D printing, CAD design, woodworking, electronics, and practical fabrication—built around your idea.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">Start Your Project</a>
-          <a class="button secondary" href="#work">See Our Work</a>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="spec-label"><span class="spec-code">2080 FAB CO.</span>Custom fabrication &middot; Delaware County, PA</p>
+          <h1 id="hero-heading">Turning ideas<br>into real builds.</h1>
+          <p class="lede">3D printing, CAD design, woodworking, electronics and laser work from one Delco workshop. Bring a sketch, a photo or a broken part. We design it, build it and deliver it.</p>
+          <div class="actions">
+            <a class="button primary large" href="#contact">Start a project</a>
+            <a class="button secondary large" href="https://shop.2080fabco.com">Visit the shop <span class="ext" aria-hidden="true">&#8599;</span></a>
+          </div>
+          <ul class="hero-facts" aria-label="Quick facts">
+            <li><strong>In-house</strong><span>3D printing and CAD</span></li>
+            <li><strong>Wood, electronics, laser</strong><span>built in the same shop</span></li>
+            <li><strong>Est. 2025</strong><span>Delaware County, Pennsylvania</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-mosaic">
+          <figure class="tile tile--main">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/shop-800.webp 800w, assets/optimized/shop-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 46vw">
+              <img src="assets/optimized/shop-800.jpg" width="800" height="600" alt="2080 Fab Co. electronics and fabrication workspace" fetchpriority="high" decoding="async">
+            </picture>
+            <figcaption><span class="spec-code">SHOP</span>The bench in Delco</figcaption>
+          </figure>
+          <figure class="tile">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/pergola-800.webp">
+              <img src="assets/optimized/pergola-800.jpg" width="800" height="600" alt="Finished custom pergola build" loading="lazy" decoding="async">
+            </picture>
+            <figcaption><span class="spec-code">WOOD</span>Pergola build</figcaption>
+          </figure>
+          <figure class="tile">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/organizer-board-900.webp">
+              <img src="assets/optimized/organizer-board-900.jpg" width="900" height="900" alt="3D-printed triple battery holder mounted on a poplar wall organizer board" loading="lazy" decoding="async">
+            </picture>
+            <figcaption><span class="spec-code">PRINT</span>Wall organizer system</figcaption>
+          </figure>
+          <figure class="tile">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/wled-board-800.webp">
+              <img src="assets/optimized/wled-board-800.jpg" width="800" height="1067" alt="Custom WLED electronics control board" loading="lazy" decoding="async">
+            </picture>
+            <figcaption><span class="spec-code">WIRE</span>WLED controller</figcaption>
+          </figure>
         </div>
       </div>
+    </section>
 
-      <div class="hero-visual photo-hero">
-        <picture>
-          <source type="image/webp" srcset="assets/optimized/printer-480.webp">
-          <img src="assets/printer.jpg" width="480" height="640" alt="Bambu Lab 3D printer producing a custom part" fetchpriority="high" decoding="async">
-        </picture>
-        <div class="photo-badge">IN-HOUSE 3D PRINTING</div>
-      </div>
-
-      <div class="hero-stats">
-        <div><strong>3D</strong><span>Printing</span></div>
-        <div><strong>CAD</strong><span>Design</span></div>
-        <div><strong>ONE</strong><span>Shop. Many Capabilities.</span></div>
+    <section id="capabilities" class="section" aria-labelledby="capabilities-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="spec-label"><span class="spec-code">01</span>Capabilities</p>
+          <h2 id="capabilities-heading">Built for ideas that don&rsquo;t come off a shelf.</h2>
+          <p class="section-intro">Six ways to get a part, a piece or a whole project made. Most jobs use two or three of them together.</p>
+        </div>
+        <ol class="ledger">
+          <li class="ledger-row">
+            <span class="ledger-num" aria-hidden="true">01</span>
+            <div class="ledger-body"><h3>3D printing</h3><p>Functional parts, prototypes, replacement pieces, organizers, fixtures and short-run products, printed on in-house machines.</p></div>
+            <ul class="tags" aria-label="Typical work"><li>Replacement parts</li><li>Organizers</li><li>Short runs</li></ul>
+          </li>
+          <li class="ledger-row">
+            <span class="ledger-num" aria-hidden="true">02</span>
+            <div class="ledger-body"><h3>CAD design</h3><p>From rough measurements and sketches to clean, printable, production-ready digital models you can keep.</p></div>
+            <ul class="tags" aria-label="Typical work"><li>Measured models</li><li>Print-ready files</li><li>Revisions</li></ul>
+          </li>
+          <li class="ledger-row">
+            <span class="ledger-num" aria-hidden="true">03</span>
+            <div class="ledger-body"><h3>Woodworking</h3><p>Custom shop fixtures, home projects, displays, wall systems, furniture accents and specialty builds like the pergola below.</p></div>
+            <ul class="tags" aria-label="Typical work"><li>Fixtures</li><li>Outdoor builds</li><li>Wall systems</li></ul>
+          </li>
+          <li class="ledger-row">
+            <span class="ledger-num" aria-hidden="true">04</span>
+            <div class="ledger-body"><h3>Electronics</h3><p>Custom lighting, microcontroller projects, smart displays, embedded electronics and practical automation.</p></div>
+            <ul class="tags" aria-label="Typical work"><li>LED control</li><li>Microcontrollers</li><li>Automation</li></ul>
+          </li>
+          <li class="ledger-row">
+            <span class="ledger-num" aria-hidden="true">05</span>
+            <div class="ledger-body"><h3>Laser &amp; finishing</h3><p>Engraving, signs, labels, personalization, branded pieces and the finishing details that complete a build.</p></div>
+            <ul class="tags" aria-label="Typical work"><li>Engraving</li><li>Labels</li><li>Branding</li></ul>
+          </li>
+          <li class="ledger-row">
+            <span class="ledger-num" aria-hidden="true">06</span>
+            <div class="ledger-body"><h3>Prototyping</h3><p>Rapid concept development, fit testing, revisions and small-batch production before committing to a final run.</p></div>
+            <ul class="tags" aria-label="Typical work"><li>Fit tests</li><li>Small batches</li><li>Iteration</li></ul>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="section intro-strip">
-      <p>From the first sketch to the finished piece, we turn practical ideas into real products.</p>
-    </section>
-
-    <section id="services" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">WHAT WE DO</p>
-        <h2>Built for ideas that don’t come off a shelf.</h2>
-        <p>Flexible fabrication services for homeowners, makers, small businesses, and custom projects.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card">
-          <span class="service-number">01</span>
-          <h3>3D Printing</h3>
-          <p>Functional parts, prototypes, replacement pieces, organizers, fixtures, and short-run products.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-number">02</span>
-          <h3>CAD Design</h3>
-          <p>From rough measurements and sketches to clean, printable, production-ready digital models.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-number">03</span>
-          <h3>Woodworking</h3>
-          <p>Custom shop fixtures, home projects, displays, wall systems, furniture accents, and specialty builds.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-number">04</span>
-          <h3>Electronics</h3>
-          <p>Custom lighting, microcontroller projects, smart displays, embedded electronics, and practical automation.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-number">05</span>
-          <h3>Laser & Finishing</h3>
-          <p>Engraving, signs, labels, personalization, branded pieces, and finishing details that complete the build.</p>
-        </article>
-        <article class="service-card">
-          <span class="service-number">06</span>
-          <h3>Prototyping</h3>
-          <p>Rapid concept development, fit testing, revisions, and small-batch production before committing to a final run.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="work" class="section dark-panel">
-      <div class="section-heading">
-        <p class="eyebrow">FEATURED WORK</p>
-        <h2>Made to solve a problem—or create something nobody else has.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <picture>
-            <source type="image/webp" srcset="assets/optimized/pergola-800.webp 800w, assets/optimized/pergola-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 400px">
-            <img class="project-photo" src="assets/optimized/pergola-800.jpg" width="800" height="600" alt="Finished custom pergola build" loading="lazy" decoding="async">
-          </picture>
-          <div class="project-info">
-            <h3>Custom Pergola Build</h3>
-            <p>A complete outdoor woodworking project designed and built for the space.</p>
+    <section id="work" class="section section--panel" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="spec-label"><span class="spec-code">02</span>Featured work</p>
+            <h2 id="work-heading">Made to solve a problem, or to make something that didn&rsquo;t exist.</h2>
           </div>
-        </article>
-
-        <article class="project-card">
-          <picture>
-            <source type="image/webp" srcset="assets/optimized/wled-board-800.webp">
-            <img class="project-photo" src="assets/optimized/wled-board-800.jpg" width="800" height="1067" alt="Custom WLED electronics control board" loading="lazy" decoding="async">
-          </picture>
-          <div class="project-info">
-            <h3>WLED Control System</h3>
-            <p>A custom-built electronics and lighting control setup with clean component mounting.</p>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <picture>
-            <source type="image/webp" srcset="assets/optimized/cyberbrick-800.webp 800w, assets/optimized/cyberbrick-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 400px">
-            <img class="project-photo" src="assets/optimized/cyberbrick-800.jpg" width="800" height="600" alt="Custom Cyberbrick bumper car controllers" loading="lazy" decoding="async">
-          </picture>
-          <div class="project-info">
-            <h3>Custom Electronics Build</h3>
-            <p>Functional controllers combining printed parts, electronics, assembly, and finishing.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section about-grid">
-      <div>
-        <p class="eyebrow">ABOUT 2080 FAB CO.</p>
-        <h2>A builder’s approach to modern fabrication.</h2>
-        <picture>
-          <source type="image/webp" srcset="assets/optimized/shop-800.webp 800w, assets/optimized/shop-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 520px">
-          <img class="about-photo" src="assets/optimized/shop-800.jpg" width="800" height="600" alt="2080 Fab Co. electronics and fabrication workspace" loading="lazy" decoding="async">
-        </picture>
-      </div>
-      <div class="about-copy">
-        <p>
-          2080 Fabrications Co. combines hands-on craftsmanship with modern tools to create useful,
-          durable, and highly customized products.
-        </p>
-        <p>
-          Whether the project begins as a napkin sketch, a broken part, a rough measurement,
-          or an idea that has never existed before, the goal is the same: design it intelligently,
-          build it carefully, and deliver something worth using.
-        </p>
-      </div>
-    </section>
-
-    <section id="shop" class="section shop-banner">
-      <div>
-        <p class="eyebrow">2080 FAB CO. SHOP</p>
-        <h2>Original products are on the way.</h2>
-        <p>Shop accessories, printed solutions, patriotic designs, workshop gear, and limited-run builds.</p>
-        <p class="shop-note">The online shop is being prepared and is currently password-protected while the catalog is completed.</p>
-      </div>
-      <a class="button secondary" href="https://shop.2080fabco.com">Visit the 2080 Shop</a>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="section-heading">
-        <p class="eyebrow">START A PROJECT</p>
-        <h2>Have an idea? Let’s figure out how to build it.</h2>
-        <p>Send a description, photo, sketch, or rough measurements. We’ll take it from there.</p>
-      </div>
-
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:2080fabco@gmail.com">
-          <span>Email</span>
-          <strong>2080fabco@gmail.com</strong>
-        </a>
-        <a class="contact-card" href="https://shop.2080fabco.com">
-          <span>Shop</span>
-          <strong>Online Shop</strong>
-        </a>
-        <div class="contact-card">
-          <span>Service Area</span>
-          <strong>Delaware County, Pennsylvania</strong>
+          <a class="textlink" href="#contact">Have a project like these? Start here</a>
+        </div>
+        <div class="work-grid">
+          <article class="work-card work-card--wide">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/pergola-800.webp 800w, assets/optimized/pergola-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 60vw">
+              <img src="assets/optimized/pergola-800.jpg" width="800" height="600" alt="Finished custom pergola build" loading="lazy" decoding="async">
+            </picture>
+            <div class="work-info"><p class="work-tag">Woodworking</p><h3>Custom pergola build</h3><p>A complete outdoor woodworking project, designed and built for the space it lives in.</p></div>
+          </article>
+          <article class="work-card">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/wled-board-800.webp">
+              <img src="assets/optimized/wled-board-800.jpg" width="800" height="1067" alt="Custom WLED electronics control board" loading="lazy" decoding="async">
+            </picture>
+            <div class="work-info"><p class="work-tag">Electronics</p><h3>WLED control system</h3><p>A custom-built lighting controller with clean component mounting.</p></div>
+          </article>
+          <article class="work-card">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/cyberbrick-800.webp 800w, assets/optimized/cyberbrick-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 30vw">
+              <img src="assets/optimized/cyberbrick-800.jpg" width="800" height="600" alt="Custom Cyberbrick bumper car controllers" loading="lazy" decoding="async">
+            </picture>
+            <div class="work-info"><p class="work-tag">3D print + electronics</p><h3>Custom controller build</h3><p>Functional controllers combining printed parts, electronics, assembly and finishing.</p></div>
+          </article>
+          <article class="work-card">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/organizer-three-900.webp">
+              <img src="assets/optimized/organizer-three-900.jpg" width="900" height="900" alt="3D-printed triple battery holder for the 2080 Fab Wall Organizer system" loading="lazy" decoding="async">
+            </picture>
+            <div class="work-info"><p class="work-tag">Product line</p><h3>2080 Fab Wall Organizer</h3><p>Battery holders, tool holders, hooks and bins, designed in CAD and printed in-house. <a href="https://shop.2080fabco.com">Available in the shop</a>.</p></div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <a class="button primary large" href="mailto:2080fabco@gmail.com?subject=New%20Project%20Request">Email About a Project</a>
+    <section id="process" class="section" aria-labelledby="process-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="spec-label"><span class="spec-code">03</span>How a project works</p>
+          <h2 id="process-heading">From napkin sketch to finished part.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step-num" aria-hidden="true">1</span><h3>Send the idea</h3><p>A description, a photo, a sketch or rough measurements is enough to start. A broken part works too.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">2</span><h3>Design and agree</h3><p>We work out the approach together, model it in CAD where it helps, and confirm materials, size and scope before anything is built.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">3</span><h3>Build in-house</h3><p>Printing, cutting, wiring, engraving and finishing happen in the Delco shop, with fit checks along the way.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">4</span><h3>Deliver</h3><p>You get the finished piece and, where it applies, the files that made it.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="shop" class="section section--panel" aria-labelledby="shop-heading">
+      <div class="wrap shop-grid">
+        <div class="shop-copy">
+          <p class="spec-label"><span class="spec-code">04</span>The 2080 shop</p>
+          <h2 id="shop-heading">Products we make for our own bench, now for yours.</h2>
+          <p>The online shop carries the 2080 Fab Wall Organizer system, 3D-printed battery holders, tool holders, hooks and bins, alongside the Dark Fantasy apparel line. It runs separately from this site at shop.2080fabco.com.</p>
+          <p class="shop-note">The shop is being prepared and is password-protected while the catalog is completed.</p>
+          <div class="actions">
+            <a class="button primary" href="https://shop.2080fabco.com">Visit the 2080 Shop <span class="ext" aria-hidden="true">&#8599;</span></a>
+          </div>
+        </div>
+        <figure class="shop-photo">
+          <picture>
+            <source type="image/webp" srcset="assets/optimized/organizer-board-900.webp 900w, assets/optimized/organizer-board-1400.webp 1400w" sizes="(max-width: 900px) 100vw, 44vw">
+            <img src="assets/optimized/organizer-board-900.jpg" width="900" height="900" alt="3D-printed triple battery holder mounted on a poplar wall organizer board" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>Triple battery holder on the poplar organizer board, printed and photographed in the shop.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <figure class="about-photo">
+          <picture>
+            <source type="image/webp" srcset="assets/optimized/shop-800.webp 800w, assets/optimized/shop-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 44vw">
+            <img src="assets/optimized/shop-800.jpg" width="800" height="600" alt="2080 Fab Co. electronics and fabrication workspace" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <div class="about-copy">
+          <p class="spec-label"><span class="spec-code">05</span>About 2080 Fab Co.</p>
+          <h2 id="about-heading">A builder&rsquo;s approach to modern fabrication.</h2>
+          <p>2080 Fabrications Co. is a small maker shop in Delaware County, Pennsylvania, started in 2025. It combines hands-on craftsmanship with modern tools to create useful, durable and highly customized products.</p>
+          <p>Whether the project begins as a napkin sketch, a broken part, a rough measurement or an idea that has never existed before, the goal is the same: design it intelligently, build it carefully and deliver something worth using.</p>
+          <dl class="bench">
+            <div><dt>Shop</dt><dd>Delaware County, PA</dd></div>
+            <div><dt>Founded</dt><dd>2025</dd></div>
+            <div><dt>Tools</dt><dd>3D printing, CAD, woodworking, electronics, laser</dd></div>
+            <div><dt>Follow the builds</dt><dd><a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener">YouTube</a> and <a href="https://www.instagram.com/2080fabrications/" target="_blank" rel="noopener">Instagram</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="spec-label"><span class="spec-code">06</span>Start a project</p>
+          <h2 id="contact-heading">Have an idea? Let&rsquo;s figure out how to build it.</h2>
+          <p>Send a description, a photo, a sketch or rough measurements. We&rsquo;ll take it from there.</p>
+          <a class="button primary large" href="mailto:2080fabco@gmail.com?subject=New%20Project%20Request">Email about a project</a>
+          <p class="contact-hint">Custom work is quoted by email. Products are sold in the shop.</p>
+        </div>
+        <ul class="contact-cards" aria-label="Contact details">
+          <li><a class="contact-card" href="mailto:2080fabco@gmail.com"><span class="contact-card__label">Email</span><strong>2080fabco@gmail.com</strong></a></li>
+          <li><a class="contact-card" href="https://shop.2080fabco.com"><span class="contact-card__label">Shop</span><strong>shop.2080fabco.com</strong></a></li>
+          <li><div class="contact-card contact-card--static"><span class="contact-card__label">Service area</span><strong>Delaware County, Pennsylvania</strong></div></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="brand footer-brand">
-      <img class="footer-logo" src="assets/optimized/2080-logo-184.png" width="184" height="189" alt="2080 Fab Co. logo" loading="lazy" decoding="async">
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/optimized/2080-logo-184.png" width="184" height="189" alt="2080 Fab Co. badge logo" loading="lazy" decoding="async">
+        <p class="footer-tagline">Designed. Built. Delivered.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://shop.2080fabco.com">Online Shop</a>
+      </nav>
+      <nav class="footer-social" aria-label="Social media">
+        <a href="https://www.facebook.com/2080FabCo/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/2080fabrications/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+      <small class="footer-legal">&copy; <span id="year">2026</span> 2080 Fabrications Co. Delaware County, Pennsylvania. All rights reserved.</small>
     </div>
-    <p>Designed. Built. Delivered.</p>
-    <div class="social-links">
-      <a href="https://shop.2080fabco.com">Online Shop</a>
-      <a href="https://www.facebook.com/2080FabCo/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.instagram.com/2080fabrications/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener">TikTok</a>
-    </div>
-    <small>© <span id="year"></span> 2080 Fabrications Co. All rights reserved.</small>
   </footer>
 
   <script src="script.js"></script>
