@@ -50,3 +50,23 @@ if (!reduceMotion && 'IntersectionObserver' in window) {
 
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Copy the project email address (Clipboard API with a selection fallback)
+document.querySelectorAll('.copy-email').forEach((btn) => {
+  const status = btn.closest('.contact-copy')?.querySelector('.copy-status');
+  const email = btn.dataset.email || '2080fabco@gmail.com';
+  const say = (msg) => { if (status) { status.textContent = msg; setTimeout(() => { if (status.textContent === msg) status.textContent = ''; }, 6000); } };
+  btn.addEventListener('click', async () => {
+    let copied = false;
+    try {
+      if (navigator.clipboard && window.isSecureContext !== false) { await navigator.clipboard.writeText(email); copied = true; }
+    } catch (e) { copied = false; }
+    if (!copied) {
+      try {
+        const area = document.createElement('textarea'); area.value = email; area.setAttribute('readonly', ''); area.style.position = 'fixed'; area.style.left = '-9999px';
+        document.body.appendChild(area); area.select(); copied = document.execCommand && document.execCommand('copy'); document.body.removeChild(area);
+      } catch (e) { copied = false; }
+    }
+    say(copied ? 'Email copied: ' + email : 'Copy blocked by your browser. The address is ' + email);
+  });
+});
