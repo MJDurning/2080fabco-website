@@ -273,15 +273,41 @@
             <div><dt>Shop</dt><dd>Delaware County, PA</dd></div>
             <div><dt>Founded</dt><dd>2025</dd></div>
             <div><dt>Tools</dt><dd>3D printing, CAD, woodworking, electronics, laser</dd></div>
-            <div class="bench-social"><dt>Follow the builds</dt><dd><nav class="social-row" aria-label="2080 Fab Co. social accounts">
-        <a href="https://www.facebook.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Facebook (opens in a new tab)">Facebook</a>
-        <a href="https://www.instagram.com/2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Instagram (opens in a new tab)">Instagram</a>
-        <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on YouTube (opens in a new tab)">YouTube</a>
-        <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on TikTok (opens in a new tab)">TikTok</a>
-        <a href="https://www.threads.net/@2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Threads (opens in a new tab)">Threads</a>
-        <a href="https://www.pinterest.com/2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Pinterest (opens in a new tab)">Pinterest</a>
-        <a href="https://x.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on X (opens in a new tab)">X</a>
-        </nav></dd></div>
+            <div class="bench-social">
+              <dt>Follow the Builds</dt>
+              <dd>
+                <nav class="social-row" aria-label="2080 Fab Co. social accounts">
+                  <a href="https://www.facebook.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Facebook (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#facebook"></use></svg>
+                    Facebook
+                  </a>
+                  <a href="https://www.instagram.com/2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Instagram (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#instagram"></use></svg>
+                    Instagram
+                  </a>
+                  <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on YouTube (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#youtube"></use></svg>
+                    YouTube
+                  </a>
+                  <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on TikTok (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#tiktok"></use></svg>
+                    TikTok
+                  </a>
+                  <a href="https://www.threads.net/@2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Threads (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#threads"></use></svg>
+                    Threads
+                  </a>
+                  <a href="https://www.pinterest.com/2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Pinterest (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#pinterest"></use></svg>
+                    Pinterest
+                  </a>
+                  <a href="https://x.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on X (opens in a new tab)">
+                    <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#x"></use></svg>
+                    X
+                  </a>
+                </nav>
+              </dd>
+            </div>
           </dl>
         </div>
       </div>
@@ -308,6 +334,50 @@
         </ul>
       </div>
     </section>
+
+    <section id="project-reviews" class="section section--panel" aria-labelledby="project-reviews-heading" data-reviews-origin="https://2080-project-reviews.2080fabco.workers.dev">
+      <div class="wrap reviews-grid">
+        <div class="reviews-copy">
+          <h2 id="project-reviews-heading">Project Reviews</h2>
+          <ul class="review-list" aria-label="Published project reviews" hidden></ul>
+          <p class="reviews-empty" role="status">Have we built something for you? We&rsquo;d love to hear how it turned out.</p>
+          <a class="button review-button" href="#leave-a-review">Leave a Review</a>
+        </div>
+        <div class="review-panel" id="leave-a-review" tabindex="-1">
+          <h3>Leave a Review</h3>
+          <p id="review-intro">We review every submission before publishing. Please leave out contact details.</p>
+          <form class="review-form" method="post" aria-describedby="review-intro" hidden>
+            <div class="review-field">
+              <label for="review-name">Public name or initials</label>
+              <input id="review-name" name="displayName" type="text" maxlength="60" required>
+            </div>
+            <div class="review-field">
+              <label for="review-project">What did we build for you?</label>
+              <input id="review-project" name="project" type="text" maxlength="120" required>
+            </div>
+            <div class="review-field">
+              <label for="review-feedback">Your feedback</label>
+              <textarea id="review-feedback" name="feedback" rows="4" maxlength="600" required></textarea>
+            </div>
+            <div class="review-field">
+              <label for="review-photo">Project photo (optional)</label>
+              <input id="review-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="review-photo-hint">
+              <p id="review-photo-hint" class="review-hint">One JPEG, PNG, or WebP, up to 8 MB.</p>
+            </div>
+            <label class="review-consent">
+              <input type="checkbox" name="permission" value="yes" aria-describedby="review-permission">
+              <span>2080 Fab Co. may publish my review and any photo I attach under the name or initials I entered.</span>
+            </label>
+            <p id="review-permission" class="review-hint">Leave the box unchecked to share feedback privately.</p>
+            <div class="actions">
+              <button class="button review-button" type="submit">Submit Review</button>
+            </div>
+            <p class="review-status" role="status"></p>
+          </form>
+          <noscript><p class="review-hint">Enable JavaScript to submit a review and see published feedback.</p></noscript>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -325,15 +395,39 @@
         <a href="https://shop.2080fabco.com">Online Shop</a>
       </nav>
       <nav class="footer-social" aria-label="Social media">
-        <a href="https://www.facebook.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Facebook (opens in a new tab)">Facebook</a>
-        <a href="https://www.instagram.com/2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Instagram (opens in a new tab)">Instagram</a>
-        <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on YouTube (opens in a new tab)">YouTube</a>
-        <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on TikTok (opens in a new tab)">TikTok</a>
-        <a href="https://www.threads.net/@2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Threads (opens in a new tab)">Threads</a>
-        <a href="https://www.pinterest.com/2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Pinterest (opens in a new tab)">Pinterest</a>
-        <a href="https://x.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on X (opens in a new tab)">X</a>
+        <a href="https://www.facebook.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Facebook (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#facebook"></use></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Instagram (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#instagram"></use></svg>
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/@2080Fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on YouTube (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#youtube"></use></svg>
+          YouTube
+        </a>
+        <a href="https://www.tiktok.com/@2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on TikTok (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#tiktok"></use></svg>
+          TikTok
+        </a>
+        <a href="https://www.threads.net/@2080fabrications" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Threads (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#threads"></use></svg>
+          Threads
+        </a>
+        <a href="https://www.pinterest.com/2080fabco" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on Pinterest (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#pinterest"></use></svg>
+          Pinterest
+        </a>
+        <a href="https://x.com/2080FabCo" target="_blank" rel="noopener noreferrer" aria-label="2080 Fab Co. on X (opens in a new tab)">
+          <svg class="social-logo" aria-hidden="true" focusable="false"><use href="assets/social-logos.svg#x"></use></svg>
+          X
+        </a>
       </nav>
-      <small class="footer-legal">&copy; <span id="year">2026</span> 2080 Fabrications Co. Delaware County, Pennsylvania. All rights reserved.</small>
+      <div class="footer-legal">
+        <small>&copy; <span id="year">2026</span> 2080 Fabrications Co. Delaware County, Pennsylvania. All rights reserved.</small>
+        <a class="footer-admin-link" href="https://2080-project-reviews.2080fabco.workers.dev/admin/">Review Admin</a>
+      </div>
     </div>
   </footer>
 

@@ -1,0 +1,24 @@
+{
+  "name": "2080-project-reviews",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-30",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "images": { "binding": "REVIEW_IMAGES" },
+  "vars": {
+    "PUBLIC_ORIGINS": "https://2080fabco.com,https://www.2080fabco.com"
+  },
+  "d1_databases": [
+    {
+      "binding": "REVIEWS_DB",
+      "database_name": "2080-project-reviews",
+      "database_id": "6a5346b5-899e-4030-a9f7-d53ae05f9d94",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "ratelimits": [
+    { "name": "SUBMISSION_LIMITER", "namespace_id": "20802061", "simple": { "limit": 8, "period": 60 } },
+    { "name": "LOGIN_LIMITER", "namespace_id": "20802062", "simple": { "limit": 6, "period": 60 } }
+  ]
+}
